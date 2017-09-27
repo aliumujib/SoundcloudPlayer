@@ -1,17 +1,15 @@
-# My Music
-An Android demonstration app to get my music from SoundCloud.
+# GETMe podcasts
+An Android demonstration app to get podcasts and playlists from SoundCloud.
 
 With some random animations.
 
 **Dependencies**
 
-* Data binding
-* RxJava
+* RxJava 2
 * Retrofit 2
 * Rebound
 * Gson
 * Picasso
-* Card View
 * Recycler View
 
 ## How to build
