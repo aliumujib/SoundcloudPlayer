@@ -97,6 +97,7 @@ public class NetworkHandler {
                 HttpUrl url = originalHttpUrl.newBuilder()
                         .addQueryParameter(WSConstants.CLIENT_ID_QUERY,
                                 BuildConfig.SOUNDCLOUD_API_KEY)
+                        .addQueryParameter(WSConstants.PAGE_LIMIT, String.valueOf(200))
                         .build();
                 return chain.proceed(original.newBuilder().url(url).build());
             }

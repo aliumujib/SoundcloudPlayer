@@ -4,7 +4,7 @@ import com.alium.soundcloudplayer.BuildConfig;
 
 /**
  * Created by Abdul-Mujeeb Aliu  on 10-10-2017
- *
+ * <p>
  * All constants that will be used for web services
  */
 public class WSConstants {
@@ -24,4 +24,5 @@ public class WSConstants {
 
 
     public static final String QUERY_API_KEY = "?" + WSConstants.CLIENT_ID_QUERY + "=" + BuildConfig.SOUNDCLOUD_API_KEY;
+    public static final String PAGE_LIMIT = "limit";
 }
