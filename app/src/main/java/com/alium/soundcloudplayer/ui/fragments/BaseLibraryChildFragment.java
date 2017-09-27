@@ -40,6 +40,14 @@ public abstract class BaseLibraryChildFragment extends Fragment {
         onAttachToParentFragment(getParentFragment());
     }
 
+    protected void showLoading(){
+        progressBar.setVisibility(View.VISIBLE);
+    }
+
+    protected void hideLoading(){
+        progressBar.setVisibility(View.GONE);
+        mSwipeRefreshLayout.setRefreshing(false);
+    }
 
     public abstract void initData();
 

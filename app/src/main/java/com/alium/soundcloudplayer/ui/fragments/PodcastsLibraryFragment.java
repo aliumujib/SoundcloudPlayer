@@ -87,8 +87,8 @@ public class PodcastsLibraryFragment extends Fragment implements IPodcastPlayerC
 
         // Set users for fragments in view pager
         List<User> users = new ArrayList<>();
-        users.add(new User(getString(R.string.kipzes), DataManager.MKAN_NG));
-        users.add(new User(getString(R.string.specdrums), DataManager.VOICE_OF_ISLAM));
+        users.add(new User(getString(R.string.podcasts), DataManager.MKAN_NG));
+        users.add(new User(getString(R.string.playlists), DataManager.VOICE_OF_ISLAM));
         TrackListsPagerAdapter trackListsPagerAdapter = new TrackListsPagerAdapter(getChildFragmentManager(), users);
 
         mViewPager = (ViewPager) view.findViewById(R.id.container);

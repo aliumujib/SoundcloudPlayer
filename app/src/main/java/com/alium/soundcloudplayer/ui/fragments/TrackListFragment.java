@@ -49,7 +49,7 @@ public class TrackListFragment extends BaseLibraryChildFragment {
 
     @Override
     public void initData() {
-        progressBar.setVisibility(View.VISIBLE);
+        showLoading();
         loadTracks();
     }
 
@@ -104,7 +104,6 @@ public class TrackListFragment extends BaseLibraryChildFragment {
 
 
     private void hideLoadingIndicators() {
-        progressBar.setVisibility(View.GONE);
-        mSwipeRefreshLayout.setRefreshing(false);
+        hideLoading();
     }
 }
